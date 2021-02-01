@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -13,6 +14,7 @@ import lombok.Data;
 @Entity
 @Table(name="batch_run_dtls")
 public class BatchRunDetails {
+	@Id
 	@Column(name="BATCH_RUN_SEQ")
 	private Integer batchRunId;   
 	@Column(name="BATCH_NAME")

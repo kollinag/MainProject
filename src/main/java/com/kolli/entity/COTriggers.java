@@ -4,6 +4,7 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -12,6 +13,7 @@ import lombok.Data;
 @Data
 @Table(name=" CO_TRIGGERS")
 public class COTriggers {
+	@Id
 	@Column(name="trg_id")
 	private Integer tiggerId;
 	@Column(name="case_num")

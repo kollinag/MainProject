@@ -2,6 +2,7 @@ package com.kolli.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -11,6 +12,7 @@ import lombok.Data;
 @Table(name="co_pdfs")
 public class COPdfs {
 	
+	@Id
 	@Column(name="co_pdf_id")
 	private Integer coPdfs;
 	@Column(name="plan_status")
